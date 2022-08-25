@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_all_layout"
+        tools:context=".RegisterFragment">
+
+        <ImageButton
+            android:id="@+id/imagebutton_register_back"
+            style="@style/AllImageButton"
+            android:src="@drawable/all_buttonleft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_register_createaccount"
+            style="@style/FormatTextViewBig"
+            android:layout_marginStart="@dimen/margin_view_big"
+            android:layout_marginTop="@dimen/margin_view_big"
+            android:text="@string/register_createaccount"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imagebutton_register_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imagebutton_register_back" />
+
+        <LinearLayout
+            android:id="@+id/linear_register_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_view_big"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_register_createaccount">
+
+            <EditText
+                android:id="@+id/editext_register_username"
+                style="@style/FormatTextViewMedium"
+                android:layout_width="match_parent"
+                android:hint="@string/register_username" />
+
+            <EditText
+                android:id="@+id/editext_register_password"
+                style="@style/FormatTextViewMedium"
+                android:layout_width="match_parent"
+                android:hint="@string/register_password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editext_register_confirmpassword"
+                style="@style/FormatTextViewMedium"
+                android:layout_width="match_parent"
+                android:hint="@string/register_confirmpassword"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editext_register_firstname"
+                style="@style/FormatTextViewMedium"
+                android:layout_width="match_parent"
+                android:hint="@string/register_firstname" />
+
+            <EditText
+                android:id="@+id/editext_register_lastname"
+                style="@style/FormatTextViewMedium"
+                android:layout_width="match_parent"
+                android:hint="@string/register_lastname" />
+
+            <EditText
+                android:id="@+id/editext_register_email"
+                style="@style/FormatTextViewMedium"
+                android:layout_width="match_parent"
+                android:hint="@string/register_email" />
+
+            <EditText
+                android:id="@+id/editext_register_phone"
+                style="@style/FormatTextViewMedium"
+                android:layout_width="match_parent"
+                android:hint="@string/register_phone" />
+
+            <EditText
+                android:id="@+id/editext_register_dob"
+                style="@style/FormatTextViewMedium"
+                android:layout_width="match_parent"
+                android:hint="@string/register_dob" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imagebutton_register_next"
+            style="@style/AllImageButton"
+            android:src="@drawable/all_buttonright"
+            app:layout_constraintEnd_toEndOf="@id/linear_register_input"
+            app:layout_constraintTop_toBottomOf="@id/linear_register_input" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

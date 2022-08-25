@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:padding="@dimen/padding_all_layout"
+        tools:context=".DetailOkrsFragment">
+
+        <ImageButton
+            android:id="@+id/imagebutton_detail_menu"
+            style="@style/AllImageButton"
+            android:backgroundTint="@color/background"
+            android:src="@drawable/all_buttonback"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_detail_edit"
+            style="@style/AllImageButton"
+            android:backgroundTint="@color/background"
+            android:src="@drawable/detail_buttonedit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_detail_title"
+            style="@style/FormatTextViewBig"
+            android:layout_marginTop="@dimen/margin_view_big"
+            android:text="@string/detail_detailokrs"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_detail_objective"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_objective"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_title" />
+
+        <EditText
+            android:id="@+id/edittext_detail_objective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_objective" />
+
+        <TextView
+            android:id="@+id/textview_detail_mentor"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_mentor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_detail_objective" />
+
+        <EditText
+            android:id="@+id/edittext_detail_mentor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_view_medium"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toStartOf="@id/edittext_detail_progress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_mentor" />
+
+        <TextView
+            android:id="@+id/textview_detail_progress"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_progress"
+            app:layout_constraintStart_toStartOf="@id/edittext_detail_progress"
+            app:layout_constraintTop_toBottomOf="@id/edittext_detail_objective" />
+
+        <EditText
+            android:id="@+id/edittext_detail_progress"
+            android:layout_width="@dimen/width_view_medium"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_mentor" />
+
+        <TextView
+            android:id="@+id/textview_detail_type"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_detail_mentor" />
+
+        <EditText
+            android:id="@+id/edittext_detail_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_view_medium"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toStartOf="@id/edittext_detail_target"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_type" />
+
+        <TextView
+            android:id="@+id/textview_detail_target"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_target"
+            app:layout_constraintStart_toStartOf="@id/edittext_detail_progress"
+            app:layout_constraintTop_toBottomOf="@id/edittext_detail_mentor" />
+
+        <EditText
+            android:id="@+id/edittext_detail_target"
+            android:layout_width="@dimen/width_view_medium"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_type" />
+
+        <TextView
+            android:id="@+id/textview_detail_start"
+            style="@style/FormatTextViewMedium"
+            android:text="Start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_detail_type" />
+
+        <EditText
+            android:id="@+id/edittext_detail_start"
+            android:layout_width="@dimen/width_view_big"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_start" />
+
+        <TextView
+            android:id="@+id/textview_detail_end"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_end"
+            app:layout_constraintStart_toStartOf="@id/edittext_detail_end"
+            app:layout_constraintTop_toBottomOf="@id/edittext_detail_type" />
+
+        <EditText
+            android:id="@+id/edittext_detail_end"
+            android:layout_width="@dimen/width_view_big"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_view_medium"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toStartOf="@id/textview_detail_duration"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_end" />
+
+        <TextView
+            android:id="@+id/textview_detail_duration"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_duration"
+            app:layout_constraintStart_toStartOf="@id/textview_detail_target"
+            app:layout_constraintTop_toBottomOf="@id/edittext_detail_target" />
+
+        <EditText
+            android:id="@+id/edittext_detail_duration"
+            android:layout_width="@dimen/width_view_medium"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_duration" />
+
+        <TextView
+            android:id="@+id/textview_detail_keyresults"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_keyresults"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_detail_start" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview_detail_krs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/textview_detail_reason"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_keyresults"
+            tools:itemCount="2"
+            tools:listitem="@layout/layout_item_krs" />
+
+        <TextView
+            android:id="@+id/textview_detail_reason"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_reason"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <TextView
+            android:id="@+id/textview_detail_detailreason"
+            style="@style/FormatTextViewSmall"
+            android:text="@string/all_detailreason"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_reason"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <EditText
+            android:id="@+id/edittext_detail_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_detail_detailreason" />
+
+        <Button
+            android:id="@+id/edittext_detail_save"
+            style="@style/FormatTextViewMedium"
+            android:background="@drawable/background_button"
+            android:text="@string/all_save"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

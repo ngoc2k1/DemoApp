@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:padding="@dimen/padding_all_layout"
+        tools:context=".CreateOkrsFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_create_vertical01"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_create_vertical02"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_create_back"
+            style="@style/AllImageButton"
+            android:backgroundTint="@color/background"
+            android:src="@drawable/all_buttonback"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_create_title"
+            style="@style/FormatTextViewBig"
+            android:layout_marginTop="@dimen/margin_view_big"
+            android:text="@string/create_detailokrs"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_create_objective"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_objective"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_title" />
+
+        <EditText
+            android:id="@+id/edittext_create_objective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_objective" />
+
+        <TextView
+            android:id="@+id/textview_create_mentor"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_mentor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_create_objective" />
+
+        <EditText
+            android:id="@+id/edittext_create_mentor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_view_medium"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toStartOf="@id/edittext_create_progress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_mentor" />
+
+        <TextView
+            android:id="@+id/textview_create_progress"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_progress"
+            app:layout_constraintStart_toStartOf="@id/guideline_create_vertical02"
+            app:layout_constraintTop_toBottomOf="@id/edittext_create_objective" />
+
+        <EditText
+            android:id="@+id/edittext_create_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_create_vertical02"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_mentor" />
+
+        <TextView
+            android:id="@+id/textview_create_type"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_create_mentor" />
+
+        <EditText
+            android:id="@+id/edittext_create_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_view_medium"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toStartOf="@id/edittext_create_target"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_type" />
+
+        <TextView
+            android:id="@+id/textview_create_target"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_target"
+            app:layout_constraintStart_toStartOf="@id/guideline_create_vertical02"
+            app:layout_constraintTop_toBottomOf="@id/edittext_create_mentor" />
+
+        <EditText
+            android:id="@+id/edittext_create_target"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_create_vertical02"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_type" />
+
+        <TextView
+            android:id="@+id/textview_create_start"
+            style="@style/FormatTextViewMedium"
+            android:text="Start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_create_type" />
+
+
+        <TextView
+            android:id="@+id/textview_create_end"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_create_vertical01"
+            app:layout_constraintTop_toBottomOf="@id/edittext_create_type" />
+
+
+        <EditText
+            android:id="@+id/edittext_create_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_view_medium"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toEndOf="@id/guideline_create_vertical02"
+            app:layout_constraintStart_toStartOf="@id/guideline_create_vertical01"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_start" />
+
+        <EditText
+            android:id="@+id/edittext_create_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_view_medium"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toEndOf="@id/guideline_create_vertical01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_start" />
+
+
+        <TextView
+            android:id="@+id/textview_create_duration"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_duration"
+            app:layout_constraintStart_toStartOf="@id/guideline_create_vertical02"
+            app:layout_constraintTop_toBottomOf="@id/edittext_create_target" />
+
+        <EditText
+            android:id="@+id/edittext_create_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_create_vertical02"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_duration" />
+
+        <TextView
+            android:id="@+id/textview_create_keyresults"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_keyresults"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext_create_start" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background"
+            android:src="@drawable/all_buttonadd_krs"
+            app:layout_constraintBottom_toBottomOf="@id/textview_create_keyresults"
+            app:layout_constraintStart_toEndOf="@id/textview_create_keyresults" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview_create_krs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/textview_create_reason"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_keyresults"
+            tools:itemCount="2"
+            tools:listitem="@layout/layout_item_krs" />
+
+        <TextView
+            android:id="@+id/textview_create_reason"
+            style="@style/FormatTextViewMedium"
+            android:text="@string/all_reason"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <TextView
+            android:id="@+id/textview_create_createreason"
+            style="@style/FormatTextViewSmall"
+            android:text="@string/all_detailreason"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_reason"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <EditText
+            android:id="@+id/edittext_create_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_create_createreason" />
+
+        <Button
+            android:id="@+id/edittext_create_save"
+            style="@style/FormatTextViewMedium"
+            android:background="@drawable/background_button"
+            android:text="@string/all_save"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_view_tiny"
+        android:background="@drawable/background_item_objective"
+        android:padding="@dimen/padding_all_layout">
+
+        <TextView
+            android:id="@+id/textview_itemokrs_objective"
+            style="@style/FormatTextViewSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/all_objective"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/imagebutton_itemokrs_delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_itemokrs_delete"
+            style="@style/AllImageButton"
+            android:src="@drawable/all_buttonbin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_itemokrs_objective">
+
+            <TextView
+                style="@style/FormatTextViewTiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/all_start" />
+
+            <TextView
+                android:id="@+id/textview_itemokrs_startdate"
+                style="@style/FormatTextViewTiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+
+            <TextView
+                style="@style/FormatTextViewTiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/all_due" />
+
+            <TextView
+                android:id="@+id/textview_itemokrs_duedate"
+                style="@style/FormatTextViewTiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+
+            <TextView
+                android:id="@+id/textview_itemokrs_progress"
+                style="@style/FormatTextViewTiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/all_percentage" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

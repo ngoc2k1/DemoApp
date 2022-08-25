@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/overviewOkrsFragment">
+
+    <fragment
+        android:id="@+id/overviewOkrsFragment"
+        android:name="com.bichngoc.okrsapp.OverviewOkrsFragment"
+        android:label="fragment_overview_okrs"
+        tools:layout="@layout/fragment_overview_okrs" >
+        <action
+            android:id="@+id/action_overviewOkrsFragment_to_detailOkrsFragment"
+            app:destination="@id/detailOkrsFragment" />
+        <action
+            android:id="@+id/action_overviewOkrsFragment_to_createOkrsFragment"
+            app:destination="@id/createOkrsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailOkrsFragment"
+        android:name="com.bichngoc.okrsapp.DetailOkrsFragment"
+        android:label="fragment_detail_okrs"
+        tools:layout="@layout/fragment_detail_okrs" >
+        <action
+            android:id="@+id/action_detailOkrsFragment_to_overviewOkrsFragment"
+            app:destination="@id/overviewOkrsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createOkrsFragment"
+        android:name="com.bichngoc.okrsapp.CreateOkrsFragment"
+        android:label="fragment_create_okrs"
+        tools:layout="@layout/fragment_create_okrs" >
+        <action
+            android:id="@+id/action_createOkrsFragment_to_overviewOkrsFragment"
+            app:destination="@id/overviewOkrsFragment" />
+    </fragment>
+</navigation>

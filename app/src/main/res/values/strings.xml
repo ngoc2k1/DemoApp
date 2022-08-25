@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">OKRsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="login_createaccount">Create account?</string>
+    <string name="login_login">LOGIN</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+
+    <string name="register_createaccount">CREATE ACCOUNT</string>
+    <string name="register_username">Username</string>
+    <string name="register_password">Password</string>
+    <string name="register_confirmpassword">Confirm password</string>
+
+    <string name="register_firstname">First name</string>
+    <string name="register_lastname">Last name</string>
+    <string name="register_email">Email</string>
+    <string name="register_phone">Phone</string>
+    <string name="register_dob">Date of birth</string>
+
+    <string name="overview_myokrs">My OKRs</string>
+    <string name="detail_detailokrs">Detail OKRs</string>
+    <string name="create_detailokrs">Create OKRs</string>
+
+    <string name="all_due">Due:</string>
+    <string name="all_start">Start:</string>
+    <string name="all_percentage">20%</string>
+    <string name="all_objective">Objective</string>
+    <string name="all_duration">Duration</string>
+    <string name="all_end">End</string>
+    <string name="all_target">Target</string>
+    <string name="all_type">Type</string>
+    <string name="all_progress">Progress</string>
+    <string name="all_keyresults">Key results</string>
+    <string name="all_keyresult">Key result</string>
+    <string name="all_namekr">Name</string>
+    <string name="all_step">Step</string>
+    <string name="all_detailreason">Why is this important\? How will it develop itself\?\nWho wil help me\? What are they\?</string>
+    <string name="all_reason">Reason</string>
+    <string name="all_save">Save</string>
+    <string name="all_mentor">Mentor</string>
+
+</resources>

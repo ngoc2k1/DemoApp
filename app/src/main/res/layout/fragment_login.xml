@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_all_layout"
+        tools:context=".LoginFragment">
+
+        <TextView
+            android:id="@+id/textview_login_login"
+            style="@style/FormatTextViewBig"
+            android:layout_marginTop="@dimen/margin_view_big"
+            android:text="@string/login_login"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linear_login_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_view_big"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_login_login">
+
+            <EditText
+                android:id="@+id/editext_login_username"
+                android:layout_width="match_parent"
+                style="@style/FormatTextViewMedium"
+                android:hint="@string/login_username" />
+
+            <EditText
+                android:id="@+id/editext_login_password"
+                android:layout_width="match_parent"
+                style="@style/FormatTextViewMedium"
+                android:hint="@string/login_password" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_login_createaccount"
+            style="@style/FormatTextViewSmall"
+            android:layout_marginTop="@dimen/size_text_small"
+            android:text="@string/login_createaccount"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_login_input" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_login_next"
+            style="@style/AllImageButton"
+            android:src="@drawable/all_buttonright"
+            app:layout_constraintEnd_toEndOf="@id/linear_login_input"
+            app:layout_constraintTop_toBottomOf="@id/linear_login_input" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
